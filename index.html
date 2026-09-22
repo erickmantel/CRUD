@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="icon" type="image/png" href="assets/avatar.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type="button" class="button btn-cadastro" id="cadastrarCliente">+ Cadastrar Cliente</button>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <button class="button btn-close-modal" id="close-modal" click="close-modal">&#10006;</button>
+                </header>
+                <form class="modal-form" id="form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome completo" required>
+                    <input type="email" id="email" class="modal-field" placeholder="exemplo@email.com" required>
+                    <input type="tel" id="celular" class="modal-field" placeholder="(00) 90000-0000"required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade onde mora" required>
+                </form>
+                <footer class="modal-footer">
+                    <button class="button btn-save" id="salvar">Salvar</button>
+                    <button class="button btn-cancel" id="cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer> Desenvolvido por <a href="https://github.com/erickmantel" target="_blank">Erick Mantel</a></footer>
+</body>
+
+</html>
