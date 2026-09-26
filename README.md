@@ -7,7 +7,7 @@
 ---
 
 ## Link da Aplicação
-🔗 [Clique aqui para testar o projeto]()
+🔗 [Clique aqui para testar o projeto](https://erickmantel.github.io/CRUD/)  
 
 ---
 
