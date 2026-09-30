@@ -33,6 +33,7 @@ const isValidFields = () => {
 
 const clearFields = () => {
     const form = document.getElementById('form')
+    document.getElementById('nome').dataset.index = "new"
     form.reset()
 }
 
