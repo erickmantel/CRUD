@@ -7,7 +7,7 @@
 ---
 
 ## Link da Aplicação
-🔗  <a href="https://erickmantel.github.io/CRUD/" target="_blank" rel="noopener noreferrer">Clique aqui para testar o projeto</a>  
+🔗  <a href="https://erickmantel.github.io/crud-cadastro-clientes/" target="_blank" rel="noopener noreferrer">Clique aqui para testar o projeto</a>  
 
 
 
