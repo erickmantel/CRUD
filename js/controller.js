@@ -1,5 +1,5 @@
 import {readClient, deleteClient, createClient, updateClient} from './model.js'
-import {openModal, closeModal, updateTable, fillFields} from './view.js'
+import {openModal, closeModal, updateTable, fillFields, editNameModal} from './view.js'
 
 
 const isValidFields = () => {
@@ -9,6 +9,7 @@ const isValidFields = () => {
 const editClient = (index) => {
     const client = readClient()[index]
     client.index = index
+    editNameModal(client.nome)
     fillFields(client)
     openModal()
 }

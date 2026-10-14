@@ -1,8 +1,11 @@
 import {readClient} from './model.js'
 
-export const openModal = () => document.getElementById('modal').classList.add('active');
+export const openModal = () => {
+    document.getElementById('modal').classList.add('active')
+}
 
 export const closeModal = () => {
+    document.querySelector('.modal-header > h2').innerHTML = "Novo Cliente"
     document.getElementById('modal').classList.remove('active')
     clearFields()
 }
@@ -45,4 +48,8 @@ export const fillFields = (client) => {
     document.getElementById('celular').value = client.celular
     document.getElementById('cidade').value = client.cidade
     document.getElementById('nome').dataset.index = client.index
+}
+
+export const editNameModal = (nameClient) => {
+    document.querySelector('.modal-header > h2').innerHTML = `Editando ${nameClient}`
 }

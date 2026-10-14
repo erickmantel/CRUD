@@ -20,5 +20,3 @@ export const deleteClient = (index) => {
     dbClient.splice(index, 1)
     setLocalStorage(dbClient)
 }
-
-//4 funções da camada model foram exportadas.
